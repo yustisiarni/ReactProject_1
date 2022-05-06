@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Info from './components/Info'
+import About from './components/About'
+import Footer from './components/Footer'
+import Interests from './components/Interests'
+// import { faFaceRelieved } from '@fortawesome/pro-solid-svg-icons'
+// import Facebook_icon from './icon/Facebook_Icon.svg'
+// import GitHub_icon from './icon/GitHub_Icon.svg'
+// import Instagram_icon from './icon/Instagram_Icon.svg'
+// import Linkedin_icon from './icon/Linkedin_Icon.svg'
+// import Twitter_icon from './icon/Twitter_Icon.svg'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    return(
+        <div className='container'>
+        <Info />
+        <About />
+        <Interests />
+        <Footer />
+        </div>
+    )
 }
-
-export default App;
